@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+
+ <title>Form</title>  
+</head>
+
+<body>
+
+
+<header id="introtext">
+<h1>U.S. STANDARD CERTIFICATE OF LIVE BIRTH</h1>
+</header>
+ 
+ 
+
+ <center>
+
+<form id=userform>
+	<fieldset>
+		<legend>CHILD </legend>
+		<ol>
+			<li>
+				<label for=username>1. Child`s Name (First, Middle, Last, Suffix)</label>
+				<input  type=text name=first id=first  placeholder="First Name" "autofocus required">
+				<input  type=text name=middle id=middle  placeholder="Middle Name" required autofocus>
+				<input  type=text name=last id=last  placeholder="Last Name" required autofocus>
+				<input  type=text name=suffix id=suffix  placeholder="Suffix" required autofocus>
+			</li>	
+			<li>
+				<label for="tob">2. TIME OF BIRTH(24 hrs)</label>
+				<input type="number" name="tob" id="tob" placeholder="Select hour" required>
+			</li>
+			<li>
+				<label for="male">3. SEX</label>
+				<label for="male">Male</label>
+  				<input type="radio" name="sex" id="male" value="male">
+  				<label for="female">Female</label>
+  				<input type="radio" name="sex" id="female" value="female">
+			</li>
+			<li>
+				<label for=dob>4. DATE OF BIRTH</label>
+				<input  type=date name=dob id=dob placeholder="Select Date" required >
+			</li>
+			
+			<li>
+				<label for=facility>5. FACILITY NAME</label>
+				<input type=text name=facility id=facility placeholder="If not institution, give street and number" required>
+			</li>
+			<li>
+			<label for="Ctl">6. CITY, TOWN, OR LOCATION OF BIRTH</label>
+			<input type="text" id="Ctl" name="city" >
+			</li>
+			<li>
+			<label for="Cob">7. COUNTY OF BIRTH</label>
+			<input type="text" id="Cob" name="country">
+			</li>
+			
+		</ol>
+		
+	</fieldset>
+
+
+	<fieldset>
+		<legend>MOTHER</legend>	
+		<ol>
+			<li>
+				<label>8a. MOTHER’S CURRENT LEGAL NAME (First, Middle, Last, Suffix)</label>
+				<input  type=text name=mfirst id=first  placeholder="First Name" required autofocus>
+				<input  type=text name=mmiddle id=middle  placeholder="Middle Name" required autofocus>
+				<input  type=text name=mlast id=last  placeholder="Last Name" required autofocus>
+				<input  type=text name=msuffix id=suffix  placeholder="Suffix" required autofocus>
+			</li>
+			<li>
+				<label for=mdob>4. DATE OF BIRTH</label>
+				<input  type=date name=mdob id=mdob placeholder="Select Date" required autofocus>
+			</li>
+			<li>
+				<label>8c. MOTHER’S NAME PRIOR TO FIRST MARRIAGE (First, Middle, Last, Suffix)</label>
+				<input  type=text name=mfirst id=first  placeholder="First Name" required autofocus>
+				<input  type=text name=mmiddle id=middle  placeholder="Middle Name" required autofocus>
+				<input  type=text name=mlast id=last  placeholder="Last Name" required autofocus>
+				<input  type=text name=msuffix id=suffix  placeholder="Suffix" required autofocus>				
+			</li>
+			<li>
+				 <label for=bplace>8d. BIRTHPLACE (State, Territory, or Foreign Country)</label>
+				 <input type=text name=bplace id=bplace placeholder="Enter State" required> 	
+			</li>
+					
+			<li>
+			<label for="Rom">9a. RESIDENCE OF MOTHER-STATE</label>
+			<input type="text" id="Rom" name="motherstate">
+			</li>
+			<li>
+			<label for="C">9b. COUNTY</label>
+			<input type="text" id="C" name="coutry">
+           </li>			
+		   <li>
+		   <label for="Ctl"> 9c. CITY, TOWN, OR LOCATION</label>
+		   <input type="text" id="Ctl" name="city">
+		   </li>
+		   <li>
+		   <label for="S&N">9d. STREET AND NUMBER <label>
+		   <input type="text" id="S&N" name="Street">
+		   </li>
+		   <li>
+		   <label for ="Apn">9e. APT. NO. </label>
+		   <input type="number" id="Apn" name="Apno">
+		   </li>
+		    <li>
+		  <label for="zc">9f. ZIP CODE</label>
+				<input type="text" id="zc" name="zip"  >
+		   </li>
+		    <li>
+		   <label for="icl">9g. INSIDE CITY LIMITS?</label>
+		   <input type="number" name="ys" id="yes" >
+		   <label for ="y">Yes</label>
+		        <input type="radio" id="yes" name="ys">
+		   <label for ="n">No</label>
+     			<input type="radio" name="ys" id="n" >
+		   </li>
+		</ol>
+	</fieldset>
+	
+	<fieldset>
+	<legend>FATHER</legend>
+	<ol>
+	<li>
+	<label> 10a.  FATHER’S CURRENT LEGAL NAME (First, Middle, Last, Suffix)</label> 
+        <input type ="text" id="Ffirst" name="firstname" placeholder="Firstname" "autofocus required"> 
+		<input type ="text" id="Fmid" name="middlename" placeholder="Middlename" "autofocus required"> 
+		<input type ="text" id="Flast" name="lastname" placeholder="Lastname" "autofocus required"> 
+		<input type ="text" id="Fsuf" name="suffix" placeholder="Suffix" "autofocus required"> 
+		</li>
+		
+		<li>
+		<label for "dt"> 10b.  DATE OF BIRTH (Mo/Day/Yr)  </label>
+		<input type="date" id="id" name="date">
+		</li>
+		<li>
+		<label for="stf">10c.  BIRTHPLACE (State, Territory, or Foreign Country) </label>
+		<input type="text" id="stf" name="stf">
+		</li>
+		</ol>
+	</fieldset>
+	
+	<fieldset>
+	<legend>CERTIFIER </legend>
+	<ol>
+	<li>
+	<label>  11.  CERTIFIER’S NAME:    _______________________________________________</label><br>
+	<label>Title:</label>
+	 <label for="md">MD</label>
+	 <input type="checkbox" id="md" name="md" >
+	 <label for="do">Do</label>
+     <input type="checkbox" id="do" name="do">   <br>
+	 <label for="hosad">HOSPITAL  ADMIN</label>
+	 <input type="checkbox" id="hosad" name="hosad">
+	 <label for="cc">CNM/CM</label>
+	 <input type="checkbox" id="cc" name="cc">
+	 <label for="om">OTHER MIDWIFE</label>
+	 <input type="checkbox" id="om" name="om"><br>
+	 <label for="other">OTHER (Specify)_____________________________</label>
+	 <input type="checkbox" id="other" name= "other">
+	</li>
+	<li>
+	<label for="dc"> 12.  DATE CERTIFIED </label>
+	<input type="date" id="dc" name="date">
+	</li>
+	
+	<li>
+	<label for="df">13.  DATE FILED BY REGISTRAR  </label>
+	<input type="date" id="df"  name="df">
+	</li>
+	
+	
+	</ol>
+	</fieldset>
+	
+	<fieldset>
+		<button type=submit>Submit</button>
+	</fieldset>
+	
+</form>	
+
+</center>
+
+<br>
+<br>
+<header id="introtext">
+<h1>INFORMATION FOR ADMINISTRATIVE USE</h1>
+</header>
+
+<form id=userform>
+	<fieldset>
+		<legend>CHILD </legend>
+		<ol>
+			<li>
+				<label for=address>14. Monther`s Mailing Address:</label>
+				<input type=text name=maddress id=maddress placeholder="Enter address" required>
+				<input type=text name=maddress id=maddress placeholder="Addition" required>
+				</li>
+					
+			
+				
+		</ol>
+	</fieldset>
+	
+</form>
+
+
+</body>
+</html>
