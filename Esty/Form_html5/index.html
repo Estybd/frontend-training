@@ -151,19 +151,19 @@
 	<legend>CERTIFIER </legend>
 	<ol>
 	<li>
-	<label>  11.  CERTIFIER’S NAME:    _______________________________________________</label><br>
-	<label>Title:</label>
+	<label>  11.  CERTIFIER’S NAME: </label><br>
+	Title:
 	 <label for="md">MD</label>
 	 <input type="checkbox" id="md" name="md" >
 	 <label for="do">Do</label>
-     <input type="checkbox" id="do" name="do">   <br>
+     <input type="checkbox" id="do" name="do">   <br/>
 	 <label for="hosad">HOSPITAL  ADMIN</label>
 	 <input type="checkbox" id="hosad" name="hosad">
 	 <label for="cc">CNM/CM</label>
 	 <input type="checkbox" id="cc" name="cc">
 	 <label for="om">OTHER MIDWIFE</label>
-	 <input type="checkbox" id="om" name="om"><br>
-	 <label for="other">OTHER (Specify)_____________________________</label>
+	 <input type="checkbox" id="om" name="om"><br/>
+	 <label for="other">OTHER (Specify)</label>
 	 <input type="checkbox" id="other" name= "other">
 	</li>
 	<li>
@@ -176,27 +176,28 @@
 	<input type="date" id="df"  name="df">
 	</li>
 	
-	
 	</ol>
 	</fieldset>
 	
-	<fieldset>
-		<button type=submit>Submit</button>
-	</fieldset>
+	
 	
 </form>	
 
 </center>
 
-<br>
-<br>
+<br/>
+<br/>
 <header id="introtext">
-<h1>INFORMATION FOR ADMINISTRATIVE USE</h1>
+<h2>INFORMATION FOR ADMINISTRATIVE USE</h2>
 </header>
+
+
+
+<center>
 
 <form id=userform>
 	<fieldset>
-		<legend>CHILD </legend>
+		<legend>MOTHER </legend>
 		<ol>
 			<li>
 				<label for=address>14. Monther`s Mailing Address:</label>
@@ -204,13 +205,99 @@
 				<input type=text name=maddress id=maddress placeholder="Addition" required>
 				</li>
 					
+			<li>
+			<label>15. MOTHER MARRIED? (At birth, conception, or any time between)</label><br/>
+			<label for ="ys1">Yes</label>
+			<input type="radio" id="ys1" name="chk">
+				<label for ="no1">No</label>
+			<input type="radio" id="no1" name="chk"><br>
+			<label >  IF NO, HAS PATERNITY ACKNOWLEDGEMENT BEEN SIGNED IN THE HOSPITAL?</label><br/>
+			<label for ="ys2">Yes</label>
+			<input type="radio" id="ys2" name="chk">
+				<label for ="no2">No</label>
+			<input type="radio" id="no2" name="chk"><br>
+			<label> 16.  SOCIAL SECURITY NUMBER REQUESTED FOR CHILD?</label><br/>
+			<label for="ys3"> Yes</label>
+			<input type="radio" id="ys3" name="chk">
+			<label for ="no3">No</label>
+			<input type="radio" id="no3" name="chk"><br>
+			<label> 17.  FACILITY ID. (NPI)</label>
+			<input type="text">
+			<label> 18.  MOTHER’S SOCIAL SECURITY NUMBER: </label>
+			<input type="number" id="sm">
+			<label> 19.  FATHER’S SOCIAL SECURITY NUMBER:</label>
+			<input type="number" id="fs">
+			</li>
 			
-				
+			
 		</ol>
 	</fieldset>
 	
+	
+	</center>
+	</form>
+	
+	<br/>
+	<br/>
+	<header id="introtext">
+<h2>INFORMATION FOR MEDICAL AND HEALTH PURPOSES ONLY </h2>
+</header>
+	
+	<center>
+	<form id = userform>
+	<fieldset>
+	<legend>MOTHER</legend>
+	<label>20. MOTHER’S EDUCATION (Check the box that best describes the highest degree or level of school completed at the time of delivery) </label>
+	<ol>
+	<li>
+	<label for="gr">8th grade or less  </label>
+	<input type="checkbox" id="gr"><br/>
+	<label for="gr1">9th - 12th grade, no diploma   </label>
+	<input type="checkbox" id="gr1"><br/>
+	<label for="gr2"> High school graduate or GED completed  </label>
+	<input type="checkbox" id="gr2"><br/>
+	<label for="gr3">Some college credit but no degree  </label>
+	<input type="checkbox" id="gr3"><br/>
+	<label for="gr4">Associate degree (e.g., AA, AS) </label>
+	<input type="checkbox" id="gr4"><br/>
+	<label for="gr5">Bachelor’s degree (e.g., BA, AB, BS) </label>
+	<input type="checkbox" id="gr5"><br/>
+	<label for="gr6">Master’s degree (e.g., MA, MS, MEng,  MEd, MSW, MBA)   </label>
+	<input type="checkbox" id="gr6"><br/>
+	<label for="gr7">Doctorate(e.g.,PhD, EdD)or Professional degree(e.g.,MD, DDS,DVM, LLB, JD)</label>
+	<input type="checkbox" id="gr7"> <br/>
+	</li>
+	
+	<li>
+	<label>21.  MOTHER OF HISPANIC ORIGIN? (Check the box that best describes whether the mother is Spanish/Hispanic/Latina. Check the "No" box if  mother is not Spanish/Hispanic/Latina)
+
+<label for="orl">No, not Spanish/Hispanic/Latina </label>
+<input type="checkbox" id="orl" ><br/>
+<label for="orl1"> Yes, Mexican, Mexican American, Chicana </label>
+<input type="checkbox" id="orl1"><br/>		
+<label for="orl2"> Yes, Puerto Rican </label>
+<input type="checkbox" id="orl2">
+<label for="orl3">  Yes, Cuban </label>
+<input type="checkbox" id="orl3" >
+<label for="orl4">Yes, other Spanish/Hispanic/Latina </label>
+<input type="checkbox" id="orl4">
+<label> (Specify)_____________________________</label>
+<input type="checkbox">
+</li>
+		
+	</ol>
+	</fieldset>
+	
+	
+	
+	
+	
 </form>
 
+</center>
 
+<fieldset>
+		<button type=submit>Submit</button>
+	</fieldset>
 </body>
 </html>
